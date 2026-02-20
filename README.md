@@ -44,4 +44,15 @@ src/
 │── App.css
 ```
 
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login](screenshots/login.png)
+
+### 📝 Signup Page
+![Signup](screenshots/signup.png)
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
 
