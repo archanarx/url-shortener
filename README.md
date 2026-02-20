@@ -4,7 +4,7 @@ A responsive URL Shortener application built using React.js that allows users to
 
 ---
 
-## 🚀 Features
+##  Features
 
 * User Signup and Login
 * Local Storage session persistence
@@ -16,7 +16,7 @@ A responsive URL Shortener application built using React.js that allows users to
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * React.js
 * JavaScript 
@@ -27,7 +27,7 @@ A responsive URL Shortener application built using React.js that allows users to
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -44,7 +44,7 @@ src/
 │── App.css
 ```
 
-## 📸 Screenshots
+##  Screenshots
 
 ### 🔐 Login Page
 ![Login](screenshots/login.png)
