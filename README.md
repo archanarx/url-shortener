@@ -1,18 +1,23 @@
 # 🔗 URL Shortener Web Application
 
-A responsive URL Shortener application built using React.js that allows users to create accounts, shorten URLs, and manage them with features like authentication, search, pagination, and CRUD operations.
+A modern URL Shortener web application built using React that allows users to create accounts, generate shortened links, and manage them efficiently with features like authentication, search, pagination, edit, and delete.
+
+This project demonstrates front-end development skills, state management, routing, and local storage handling.
 
 ---
 
 ##  Features
 
-* User Signup and Login
-* Local Storage session persistence
-* Add, edit, and delete URLs
-* Automatic short URL generation
-* Search and pagination
-* Copy to clipboard
+* User Signup & Login Authentication
+* Generate Shortened URLs
+* Redirect Short Links to Original URLs
+* Dashboard to Manage URLs
+* Search Functionality
+* Pagination
+* Edit & Delete URLs
+* Copy Short Link to Clipboard
 * Responsive UI with Bootstrap
+* Data Persistence using LocalStorage
 
 ---
 
@@ -23,7 +28,7 @@ A responsive URL Shortener application built using React.js that allows users to
 * Bootstrap 5
 * React Router DOM
 * HTML5 & CSS3
-* Local Storage
+* Local Storage (Client-side database)
 
 ---
 
@@ -31,18 +36,31 @@ A responsive URL Shortener application built using React.js that allows users to
 
 ```
 src/
-│── pages/
-│   ├── Login.js
-│   ├── Signup.js
-│   ├── Dashboard.js
-│   ├── AddUrl.js
-│   └── UrlList.js
-│
-│── Navbar.js
-│── App.js
-│── index.js
-│── App.css
+ ├── pages/
+ │    ├── Login.js
+ │    ├── Signup.js
+ │    ├── Dashboard.js
+ │    ├── AddUrl.js
+ │    ├── UrlList.js
+ │    └── Redirect.js
+ │
+ ├── Navbar.js
+ ├── App.js
+ ├── App.css
+ └── index.js
 ```
+
+---
+
+##  How It Works
+
+1. User signs up and logs in.
+2. User adds a URL with a title.
+3. App generates a unique short ID.
+4. Short link redirects to original URL using routing.
+5. Data is stored in localStorage for persistence.
+
+---
 
 ##  Screenshots
 
@@ -55,4 +73,11 @@ src/
 ### 📊 Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
+---
+### *Future Improvements*
+
+* Backend integration (Django)
+* Database storage
+* Link expiration
+* Deployment with public domain
 
