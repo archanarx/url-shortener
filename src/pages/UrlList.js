@@ -109,12 +109,12 @@ function UrlList({ user, urls, setUrls }) {
                 {/* SHORT URL */}
                 <td>
                   <span className="badge bg-info text-dark me-2">
-                    {u.short}
+                    {u.shortLink}
                   </span>
 
                   <button
                     className="btn btn-sm btn-outline-secondary"
-                    onClick={() => navigator.clipboard.writeText(u.short)}
+                    onClick={() => navigator.clipboard.writeText(u.shortLink)}
                   >
                     Copy
                   </button>

@@ -25,14 +25,18 @@ function AddUrl({ user, setUrls }) {
       return;
     }
 
-    // create new url 
+    const shortId = generateShort();
+    const shortLink = window.location.origin + "/" + shortId;
+
     const newUrl = {
       title,
       url,
-      short: generateShort(),
+      shortId,        // unique id
+      shortLink,      // actual working short url
       time: new Date().toISOString(),
     };
 
+    
     users[index].urls.push(newUrl);
 
     localStorage.setItem("users", JSON.stringify(users));

@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import { useState, useEffect } from "react";
+import Redirect from "./pages/Redirect";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -24,8 +25,8 @@ function App() {
       <Navbar user={user} logout={logout} />
 
       <div className="container mt-4">
-        
         <Routes>
+
           <Route
             path="/"
             element={user ? <Dashboard user={user} /> : <Navigate to="/login" />}
@@ -45,6 +46,10 @@ function App() {
             path="/dashboard"
             element={user ? <Dashboard user={user} /> : <Navigate to="/login" />}
           />
+
+          {/* SHORT URL REDIRECT ROUTE */}
+          <Route path="/:shortId" element={<Redirect />} />
+
         </Routes>
       </div>
     </>
