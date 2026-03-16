@@ -64,13 +64,13 @@ src/
 
 ##  Screenshots
 
-### 🔐 Login Page
+###  Login Page
 ![Login](screenshots/login.png)
 
-### 📝 Signup Page
+###  Signup Page
 ![Signup](screenshots/signup.png)
 
-### 📊 Dashboard
+###  Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
 ---
