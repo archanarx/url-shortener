@@ -25,9 +25,9 @@ This project demonstrates front-end development skills, state management, routin
 
 * React.js
 * JavaScript 
-* Bootstrap 5
+* Bootstrap 
 * React Router DOM
-* HTML5 & CSS3
+* HTML & CSS
 * Local Storage (Client-side database)
 
 ---
